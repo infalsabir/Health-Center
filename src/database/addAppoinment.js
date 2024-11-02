@@ -1,4 +1,4 @@
-// src/components/AddAppointmentForm.js
+
 import React, { useState } from 'react';
 import { addAppointment } from './firebaseData';
 import AvailableAppointments from './availableAppoinment';

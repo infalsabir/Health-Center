@@ -20,8 +20,8 @@ export const addInitialData = async () => {
   };
 
   const appointmentData = {
-    doctorId: "doctorId_1", // Replace with actual doctor ID
-    patientId: "patientId_1", // Replace with actual patient ID
+    doctorId: "doctorId_1", 
+    patientId: "patientId_1", 
     dateTime: new Date(),
     notes: "Follow up appointment"
   };

@@ -1,6 +1,6 @@
-// src/components/AddDoctorForm.js
+
 import React, { useState } from 'react';
-import { addDoctorWithSchedule } from './firebaseData'; // Ensure correct path
+import { addDoctorWithSchedule } from './firebaseData'; 
 
 const AddDoctorForm = () => {
   const [doctorData, setDoctorData] = useState({ 
@@ -42,7 +42,6 @@ const AddDoctorForm = () => {
       <input name="specialization" value={doctorData.specialization} onChange={handleInputChange} placeholder="Specialization" required />
       <input name="contactInfo.phone" value={doctorData.contactInfo.phone} onChange={handleInputChange} placeholder="Phone" required />
       <input name="contactInfo.email" value={doctorData.contactInfo.email} onChange={handleInputChange} placeholder="Email" required />
-      {/* Add more fields for schedule if needed */}
       <button type="submit">Add Doctor</button>
     </form>
   );

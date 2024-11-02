@@ -31,8 +31,8 @@ const doctors = [
         
       },
       {
-        id: 'doctor2',
-        name: 'Dr. Will Smith',
+        id: 'doctor3',
+        name: 'Luke Sam',
         schedule: [
           { startTime: '9:00 AM', endTime: '5:00 PM' },
           { startTime: '10:00 AM', endTime: '4:00 PM' },                                           
@@ -45,8 +45,6 @@ const doctors = [
         ],
         
       },
-
-    // Add more doctors as needed...
   ];
   
   export default doctors;

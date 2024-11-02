@@ -1,4 +1,4 @@
-// src/components/RoleSelection.js
+
 import React, { useState } from 'react';
 import AddPatientForm from './database/addPatient';
 import AddAppointmentForm from './database/addAppoinment';

@@ -1,27 +1,27 @@
 // src/pages/Login.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './login.css'; // Optional styling
+import './login.css'; 
 
-const Login = ({ setUserRole }) => { // Ensure this is receiving the prop
+const Login = ({ setUserRole }) => { 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [role, setRole] = useState('');
-  const navigate = useNavigate(); // Use useNavigate from react-router-dom
+  const navigate = useNavigate(); 
 
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Validate email and password (you can add your own logic here)
+   
     if (email && password) {
       if (role === 'doctor') {
-        setUserRole('doctor'); // Set user role to doctor
+        setUserRole('doctor'); 
         alert('Logged in as Doctor');
-        navigate('/doctor'); // Redirect to Doctor Interface
+        navigate('/doctor'); 
       } else if (role === 'patient') {
-        setUserRole('patient'); // Set user role to patient
+        setUserRole('patient'); 
         alert('Logged in as Patient');
-        navigate('/patient'); // Redirect to Patient Interface
+        navigate('/patient'); 
       } else {
         alert('Please select a role');
       }

@@ -1,6 +1,6 @@
 // src/components/BookAppointment.js
 import React, { useState, useEffect } from 'react';
-import { fetchDoctorsWithSlots, addAppointment, cancelAppointment } from '../database/firebaseData';
+import { fetchDoctorsWithSlots, addAppointment,  } from '../database/firebaseData';
 
 const BookAppointment = () => {
   const [doctors, setDoctors] = useState([]);
@@ -20,13 +20,13 @@ const BookAppointment = () => {
     if (selectedDoctor && selectedSlot) {
       const appointmentData = {
         doctorId: selectedDoctor,
-        patientId: 'patientId_1', // Replace with the actual patient ID from your login state
+        patientId: 'patientId_1', 
         dateTime: selectedSlot.startTime,
         notes: "Patient appointment",
       };
       await addAppointment(appointmentData);
       alert('Appointment booked successfully');
-      // Optionally reload slots after booking
+     
     } else {
       alert('Please select a doctor and an available slot');
     }
@@ -34,9 +34,9 @@ const BookAppointment = () => {
 
   const handleCancelAppointment = async () => {
     if (selectedDoctor && selectedSlot) {
-      await cancelAppointment(selectedDoctor, selectedSlot.id);
+      await (selectedDoctor, selectedSlot.id);
       alert('Appointment canceled');
-      // Optionally reload slots after cancellation
+      
     } else {
       alert('Please select a doctor and an appointment to cancel');
     }
@@ -78,7 +78,8 @@ const BookAppointment = () => {
                 </li>
               ))}
           </ul>
-          <button onClick={handleBookAppointment}>Book Appointment</button>
+          <button onClick={handleBookAppointment}>Book Appointment</button> <br></br>
+          <br></br>
           <button onClick={handleCancelAppointment}>Cancel Appointment</button>
         </div>
       )}

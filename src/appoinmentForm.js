@@ -1,6 +1,7 @@
-// src/components/AppointmentForm.js
+
 import React, { useState } from 'react';
 import AvailableAppointments from './database/availableAppoinment';
+import BookAppointment from './component/bookAppoinment';
 
 function AppointmentForm() {
   const [name, setName] = useState('');
@@ -25,6 +26,9 @@ function AppointmentForm() {
       <button type="submit">Book Now</button>
     </form>
     <AvailableAppointments/>
+    <button onSubmit={handleSubmit}>Book Now</button>
+    <br></br>
+    <BookAppointment/>
   </div>
   );
    

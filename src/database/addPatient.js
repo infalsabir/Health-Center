@@ -1,4 +1,4 @@
-// src/components/AddPatientForm.js
+
 import React, { useState } from 'react';
 import { addPatient } from './firebaseData'; 
 

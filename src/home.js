@@ -10,14 +10,6 @@ function Home() {
       <p style={{color:'white'}}>Your health is our priority. We provide top-notch healthcare services.</p>
       <br></br>
       
-      <br></br>
-      <br></br>
-      <br></br>
-      
-      <br></br>
-      <br></br>
-      <br></br>
-      
     </div>
   );
 }
